@@ -21,6 +21,11 @@
             window.onload = function() {
                 var height = $('#container').height();
                 $('#container').height(height - 40);
+                $('#rightcol .box .content').hide();
+                $('#rightcol .box .header').click(function() {
+                    var id = $(this).parent().attr('id');
+                    $('#rightcol #' + id + '.box .content').toggle('fast');
+                });
                 initialize();
             }
         </script>
@@ -28,7 +33,22 @@
     <body>
         <div id="header_bar"></div>
         <div id="container">
-            <div id="right_col"></div>
+            <div id="rightcol">
+                <input type="text" id="txt_keyword" />
+                <input type="button" id="btn_search" />
+                <div id="box1" class="box">
+                    <div class="header"></div>
+                    <div class="content"></div>
+                </div>
+                <div id="box2" class="box">
+                    <div class="header"></div>
+                    <div class="content"></div>
+                </div>
+                <div id="box3" class="box">
+                    <div class="header"></div>
+                    <div class="content"></div>
+                </div>
+            </div>
             <div id="map_canvas"></div>
         </div>
     </body>
