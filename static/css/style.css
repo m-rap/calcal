@@ -23,7 +23,43 @@ body {
     height: 100%;
 }
 
-#right_col {
+#rightcol {
     float: right;
     width: 300px;
+    height: 100%;
+    background-color: khaki;
+}
+
+#rightcol .box {
+    margin: 5px;
+    width: 290px;
+}
+
+#rightcol .box .header {
+    height: 40px;
+    background-color: darkkhaki;
+}
+
+#rightcol .box .header:hover {
+    height: 40px;
+    background-color: brown;
+}
+
+#rightcol .box .content {
+    height: 100px;
+    background-color: white;
+}
+
+#rightcol #txt_keyword {
+    width: 244px;
+}
+
+#rightcol #btn_search {
+    width: 50px;
+    background-color: darkkhaki;
+}
+
+#rightcol #btn_search:hover {
+    width: 50px;
+    background-color: brown;
 }
