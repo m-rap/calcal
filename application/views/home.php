@@ -11,6 +11,14 @@
         <script type="text/javascript">
             var map;
             function initialize() {
+                var height = $('#container').height();
+                $('#container').height(height - 40);
+                $('#rightcol .box .content').hide();
+                $('#rightcol .box .header').click(function() {
+                    $('#rightcol .box .content').slideUp('fast');
+                    $(this).next().slideToggle('fast');
+                });
+                
                 var mapOptions = {
                     center: new google.maps.LatLng(-34.397, 150.644),
                     zoom: 8,
@@ -18,19 +26,9 @@
                 };
                 map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
             }
-            window.onload = function() {
-                var height = $('#container').height();
-                $('#container').height(height - 40);
-                $('#rightcol .box .content').hide();
-                $('#rightcol .box .header').click(function() {
-                    var id = $(this).parent().attr('id');
-                    $('#rightcol #' + id + '.box .content').toggle('fast');
-                });
-                initialize();
-            }
         </script>
     </head>
-    <body>
+    <body onload="initialize()">
         <div id="header_bar"></div>
         <div id="container">
             <div id="rightcol">
