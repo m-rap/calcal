@@ -15,8 +15,12 @@
                 $('#container').height(height - 40);
                 $('#rightcol .box .content').hide();
                 $('#rightcol .box .header').click(function() {
-                    $('#rightcol .box .content').slideUp('fast');
-                    $(this).next().slideToggle('fast');
+                    if ($(this).next().is(':hidden')) {
+                        $('#rightcol .box .content').slideUp('fast');
+                        $(this).next().slideToggle('fast');
+                    } else {
+                        $(this).next().slideUp('fast');
+                    }
                 });
                 
                 var mapOptions = {
