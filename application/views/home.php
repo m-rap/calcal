@@ -11,8 +11,9 @@
         <script type="text/javascript">
             var map;
             function initialize() {
-                var height = $('#container').height();
-                $('#container').height(height - 40);
+                var container = document.getElementById('container');
+                var h = container.clientHeight;
+                container.style.height = (h - 40) + 'px';
                 $('#rightcol .box .content').hide();
                 $('#rightcol .box .header').click(function() {
                     if ($(this).next().is(':hidden')) {

@@ -51,6 +51,7 @@ body {
 }
 
 #rightcol #txt_keyword {
+    margin-top: 5px;
     margin-left: 5px;
     width: 234px;
 }
