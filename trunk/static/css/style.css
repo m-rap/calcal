@@ -51,7 +51,8 @@ body {
 }
 
 #rightcol #txt_keyword {
-    width: 244px;
+    margin-left: 5px;
+    width: 234px;
 }
 
 #rightcol #btn_search {
