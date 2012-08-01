@@ -2,7 +2,7 @@ var map;
 function initialize() {
     var container = document.getElementById('container');
     var h = container.clientHeight;
-    container.style.height = (h - 60) + 'px';
+    container.style.height = (h - 56) + 'px';
     $('#rightcol .box .content').hide();
     $('#rightcol .box .header').click(function() {
         if ($(this).next().is(':hidden')) {
