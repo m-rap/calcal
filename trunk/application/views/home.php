@@ -110,5 +110,4 @@
             <div id="map_canvas"></div>
         </div>
     </body>
->>>>>>> .r23
 </html>
