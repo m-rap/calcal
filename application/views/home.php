@@ -8,30 +8,7 @@
         <script type="text/javascript"
             src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAi1czVwATZeCHqMNi3lay72unp-43ln6I&sensor=false">
         </script>
-        <script type="text/javascript">
-            var map;
-            function initialize() {
-                var container = document.getElementById('container');
-                var h = container.clientHeight;
-                container.style.height = (h - 40) + 'px';
-                $('#rightcol .box .content').hide();
-                $('#rightcol .box .header').click(function() {
-                    if ($(this).next().is(':hidden')) {
-                        $('#rightcol .box .content').slideUp('fast');
-                        $(this).next().slideToggle('fast');
-                    } else {
-                        $(this).next().slideUp('fast');
-                    }
-                });
-                
-                var mapOptions = {
-                    center: new google.maps.LatLng(-34.397, 150.644),
-                    zoom: 8,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
-                map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-            }
-        </script>
+        <script type="text/javascript" src="<?php echo base_url(); ?>static/js/main.js"></script>
     </head>
     <body onload="initialize()">
         <div id="header_bar">
