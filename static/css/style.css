@@ -9,8 +9,9 @@ body {
 
 #header_bar {
     width: 100%;
-    height: 56px;
-    background: red repeat-x;
+    height: 67px;
+    background-color: red;
+    position: relative;
 }
 
 #container {
@@ -71,13 +72,15 @@ body {
 /*ROCKING&ROLIING MENU*/
 .menu{
     width:100%;
-    height:56px;
+    height:57px;
     position:relative;
+    margin-top: 5px;
     font-family: "Trebuchet MS", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: bold;
     text-transform: uppercase;
+    background-color: yellow;
 }
 .item{
     position:relative;

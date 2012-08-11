@@ -48,7 +48,7 @@
             </div>
           </div>
         </div>
-<div id="container">
+        <div id="container">
             <div id="rightcol">
                 <input type="text" id="txt_keyword" />
                 <input type="button" id="btn_search" />
