@@ -67,7 +67,8 @@
             </div>
             <div id="map_canvas"></div>
         </div>
-                <script src="<?php echo base_url(); ?>static/js/jquery-css-transform.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<script src="<?php echo base_url(); ?>static/js/jquery-css-transform.js" type="text/javascript"></script>
         <script src="<?php echo base_url(); ?>static/js/jquery-animate-css-rotate-scale.js" type="text/javascript"></script>
         <script>
             $('.item').hover(
@@ -109,5 +110,7 @@
                 .find('.item_content').stop(true,true).fadeOut().find('p').stop(true,true).fadeOut();
             }
         </script>
+	<script src="http://tympanus.net/codrops/adpacks/csscustom.js"></script> 
+		<script src="http://tympanus.net/codrops/wp-content/plugins/oiopub-direct/js.php?type=banner&align=center&zone=1"></script>
 </body>
 </html>
