@@ -67,8 +67,8 @@
             </div>
             <div id="map_canvas"></div>
         </div>
-                <script src="jquery-css-transform.js" type="text/javascript"></script>
-        <script src="jquery-animate-css-rotate-scale.js" type="text/javascript"></script>
+                <script src="<?php echo base_url(); ?>static/js/jquery-css-transform.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>static/js/jquery-animate-css-rotate-scale.js" type="text/javascript"></script>
         <script>
             $('.item').hover(
                 function(){
