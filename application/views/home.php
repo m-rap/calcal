@@ -8,6 +8,9 @@
         <script type="text/javascript"
             src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAi1czVwATZeCHqMNi3lay72unp-43ln6I&sensor=false">
         </script>
+        <script type="text/javascript">
+            var base_url = '<?php echo base_url(); ?>';
+        </script>
         <script type="text/javascript" src="<?php echo base_url(); ?>static/js/main.js"></script>
     </head>
     <body onload="initialize()">
@@ -16,7 +19,7 @@
             <div class="item"> <a class="link icon_mail"></a>
               <div class="item_content">
                 <h2>Contact us</h2>
-                <p> <a href="mailto:info@tympanus.net">eMail</a> <a href="http://www.twitter.com/codrops/">Twitter</a> <a href="http://www.facebook.com/pages/Codrops/159107397912">Facebook</a> </p>
+                <p> <a href="">eMail</a> <a href="">Twitter</a> <a href="">Facebook</a> </p>
               </div>
             </div>
             <div class="item"> <a class="link icon_help"></a>
@@ -43,7 +46,7 @@
             <div class="item"> <a class="link icon_home"></a>
               <div class="item_content">
                 <h2>Start from here</h2>
-                <p> <a href="http://www.tympanus.net/">Services</a> <a href="http://www.tympanus.net/">Portfolio</a> <a href="http://www.tympanus.net/">Pricing</a> </p>
+                <p> <a href="">Services</a> <a href="">Portfolio</a> <a href="">Pricing</a> </p>
               </div>
             </div>
           </div>
@@ -67,8 +70,8 @@
             </div>
             <div id="map_canvas"></div>
         </div>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-		<script src="<?php echo base_url(); ?>static/js/jquery-css-transform.js" type="text/javascript"></script>
+        <script type="text/javascript" src="<?php echo base_url(); ?>static/js/jquery-1.5.2.min.js"></script>
+        <script src="<?php echo base_url(); ?>static/js/jquery-css-transform.js" type="text/javascript"></script>
         <script src="<?php echo base_url(); ?>static/js/jquery-animate-css-rotate-scale.js" type="text/javascript"></script>
         <script>
             $('.item').hover(
@@ -110,7 +113,5 @@
                 .find('.item_content').stop(true,true).fadeOut().find('p').stop(true,true).fadeOut();
             }
         </script>
-	<script src="http://tympanus.net/codrops/adpacks/csscustom.js"></script> 
-		<script src="http://tympanus.net/codrops/wp-content/plugins/oiopub-direct/js.php?type=banner&align=center&zone=1"></script>
 </body>
 </html>
